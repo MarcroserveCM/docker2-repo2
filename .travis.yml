@@ -3,9 +3,6 @@ services:
   - docker
 
 before_install:
-   ruby
-   rvm:
-   - 2.5.0
    - gem install rake
    - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
 
