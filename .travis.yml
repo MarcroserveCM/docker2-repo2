@@ -1,21 +1,18 @@
-language: ruby
-rvm:
- — 2.5.0
-script:
- — bundle install — jobs=3 — retry=3
- — bundle exec rake db:create
- — bundle exec rake db:migrate
- — bundle exec rspec
 sudo: required
 services:
   - docker
 
 before_install:
-  - gem install rake
-  - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
-<<<<<<< HEAD
+   anguage: ruby
+   rvm:
+   - 2.5.0
+   - gem install rake
+   - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
 
-script: 
-   - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
-=======
->>>>>>> 9a259c7eb0c3fa74a240b628369714baf7af9f30
+script:
+    - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
+    - bundle install — jobs=3 — retry=3
+    - bundle exec rake db:create
+    - bundle exec rake db:migrate
+    - bundle exec rspec 
+
