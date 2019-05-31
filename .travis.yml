@@ -4,6 +4,9 @@ services:
 
 before_install:
   - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
+<<<<<<< HEAD
 
 script: 
    - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
+=======
+>>>>>>> 9a259c7eb0c3fa74a240b628369714baf7af9f30
