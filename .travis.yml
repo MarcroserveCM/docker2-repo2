@@ -3,4 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t MarcroserveCM/docker2-repo2 -f Dockerfile.dev .
+  - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
+
+script: 
+   - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
