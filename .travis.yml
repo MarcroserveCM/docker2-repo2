@@ -9,5 +9,6 @@ before_install:
 script:
     - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
     
+    - ./scripts/run-tests.sh
 
 
