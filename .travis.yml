@@ -8,8 +8,5 @@ before_install:
 
 script:
     - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
-    - bundle install — jobs=3 — retry=3
-    - bundle exec rake db:create
-    - bundle exec rake db:migrate
-    - bundle exec rspec 
+
 
