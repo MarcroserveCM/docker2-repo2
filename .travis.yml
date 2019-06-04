@@ -6,7 +6,7 @@ before_install:
    - gem install rake
    - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
 
-install: travis_retry pip install myawesomepackage
+
 
 script:
     - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
