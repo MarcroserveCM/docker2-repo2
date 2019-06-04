@@ -9,7 +9,7 @@ before_install:
 script:
     - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
     
-    bundler_args: --retry 5
+bundler_args: --retry 5
 
 
 
