@@ -3,16 +3,9 @@ services:
   - docker
 
 before_install:
-    - bundle install — jobs=3 — retry=3
-    - bundle exec rake db:create
-    - bundle exec rake db:migrate
-    - bundle exec rspec
 
- 
    - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
     
-
-
 
 script:
     - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
