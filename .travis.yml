@@ -5,6 +5,7 @@ services:
 before_install:
  
    - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
+   - bundle exec rake db:migrate
 
 
 
