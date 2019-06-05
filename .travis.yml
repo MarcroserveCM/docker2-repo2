@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-   - gem install rake
+ 
    - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
 
 install: travis_retry pip install
