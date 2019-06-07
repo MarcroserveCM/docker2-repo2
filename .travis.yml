@@ -26,7 +26,7 @@ local/bin '*/stack'
 
 cache:
   directories:
-  - $HOME/.stack
+    - $HOME/.stack
 
 script:
     - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
