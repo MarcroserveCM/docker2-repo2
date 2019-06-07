@@ -7,7 +7,7 @@ language: generic
 
 
 before_install:
-# Download and unpack the stack executable
+
    - mkdir -p ~/.local/bin
    - export PATH=$HOME/.local/bin:$PATH
    - travis_retry curl -L https://get.haskellstack.org/stable/linux-x86_64.tar.gz | tar xz --wildcards --strip-components=1 -C ~/.l
@@ -38,22 +38,6 @@ script:
 
 
 
-
-# Do not choose a language; we provide our own build tools.
-
-
-# Caching so the next build will be fast too.
-
-
-# Ensure necessary system libraries are present
-
-
-
-# Build dependencies
-
-
-
-# Build the package, its tests, and its docs and run the tests
 
     
 
