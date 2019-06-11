@@ -1,39 +1,24 @@
+
 sudo: required
 services:
   - docker
-  
-language: generic
-    dist: xenial
-
 
 before_install:
 
-   - mkdir -p ~/.local/bin
-   - export PATH=$HOME/.local/bin:$PATH
-   - travis_retry curl -L https://get.haskellstack.org/stable/linux-x86_64.tar.gz | tar xz --wildcards --strip-components=1 -C ~/.l
-
    - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
    
-Install:
-   - stack --no-terminal --install-ghc test --only-dependencies
-   
-addons:
-  apt:
-    packages:
-      - libgmp-dev
-
-local/bin '*/stack'
-
-cache:
-  directories:
-    - $HOME/.stack
+    
 
 script:
     - docker run marcroservecm/docker2-repo2 npm run test -- --coverage
-    - travis --exit
-    - stack --no-terminal test --haddock --no-haddock-deps
+  
+
     
-    
+
+
+
+
+
     
 
 
