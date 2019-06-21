@@ -1,6 +1,6 @@
 require 'rake/clean'
 
-require 'rake/extensiontask'
+
 # get the texplay version
 require 'lib/texplay/version'
 $dlext = Config::CONFIG['DLEXT']
