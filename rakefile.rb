@@ -1,5 +1,5 @@
 require 'rake/clean'
-require 'rake/gempackagetask'
+
 require 'rake/extensiontask'
 # get the texplay version
 require 'lib/texplay/version'
