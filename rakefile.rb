@@ -6,21 +6,8 @@ require 'lib/texplay/version'
 $dlext = Config::CONFIG['DLEXT']
 CLEAN.include("ext/**/*.#{$dlext}", "ext/**/*.log", "ext/**/*.o", "ext/**/*~", "ext/**/*#*", "ext/**/*.obj", "ext/**/*.def", "ext/**/*.pdb")
 CLOBBER.include("**/*.#{$dlext}", "**/*~", "**/*#*", "**/*.log", "**/*.o")
-specification = Gem::Specification.new do |s|
-    s.name = "texplay"
-    s.summary = "TexPlay is a light-weight image manipulation framework for Ruby and Gosu"
-    s.version = TexPlay::VERSION
-    s.date = Time.now.strftime '%Y-%m-%d'
-    s.author = "John Mair (banisterfiend)"
-    s.email = 'jrmair@gmail.com'
-    s.description = s.summary
-    s.require_path = 'lib'
-    s.add_dependency("gosu",">=0.7.14")
-    s.platform = Gem::Platform::RUBY
-    s.homepage = "http://banisterfiend.wordpress.com/2008/08/23/texplay-an-image-manipulation-tool-for-ruby-and-gosu/"
-    s.has_rdoc = false
-    s.extensions = ["ext/texplay/extconf.rb"]
-    s.files =  ["Rakefile", "README.markdown", "CHANGELOG", 
+
+   
 "lib/texplay.rb", "lib/texplay-contrib.rb", "lib/texplay/version.rb"] +
 FileList["ext/**/extconf.rb", "ext/**/*.h", "ext/**/*.c", "examples/*.rb",
 "examples/media/*"].to_a 
