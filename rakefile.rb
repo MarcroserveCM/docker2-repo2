@@ -11,7 +11,7 @@ CLOBBER.include("**/*.#{$dlext}", "**/*~", "**/*#*", "**/*.log", "**/*.o")
 ["lib/texplay.rb" "lib/texplay-contrib.rb" "lib/texplay/version.rb"] +
 FileList["ext/**/extconf.rb", "ext/**/*.h", "ext/**/*.c", "examples/*.rb",
 "examples/media/*"].to_a 
-end
+end-of-input
 Rake::GemPackageTask.new(specification) do |package|
     package.need_zip = false
     package.need_tar = false
