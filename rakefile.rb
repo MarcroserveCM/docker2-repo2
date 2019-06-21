@@ -3,7 +3,7 @@ require 'rake/clean'
 
 # get the texplay version
 
-$dlext = Config::CONFIG['DLEXT']
+$dlext = RbConfig::RbCONFIG['DLEXT']
 CLEAN.include("ext/**/*.#{$dlext}", "ext/**/*.log", "ext/**/*.o", "ext/**/*~", "ext/**/*#*", "ext/**/*.obj", "ext/**/*.def", "ext/**/*.pdb")
 CLOBBER.include("**/*.#{$dlext}", "**/*~", "**/*#*", "**/*.log", "**/*.o")
 
