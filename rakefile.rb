@@ -8,7 +8,7 @@ CLEAN.include("ext/**/*.#{$dlext}", "ext/**/*.log", "ext/**/*.o", "ext/**/*~", "
 CLOBBER.include("**/*.#{$dlext}", "**/*~", "**/*#*", "**/*.log", "**/*.o")
 
    
-"lib/texplay.rb"; "lib/texplay-contrib.rb"; "lib/texplay/version.rb"] +
+["lib/texplay.rb"; "lib/texplay-contrib.rb"; "lib/texplay/version.rb"] +
 FileList["ext/**/extconf.rb", "ext/**/*.h", "ext/**/*.c", "examples/*.rb",
 "examples/media/*"].to_a 
 end
