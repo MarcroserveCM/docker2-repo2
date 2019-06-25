@@ -4,7 +4,7 @@ language: ruby
 dist: trusty
 rvm:
   - rbx-3
-gemfile: gemfiles/Gemfile.ci
+
 
 bundler_args: --binstubs
 services:
