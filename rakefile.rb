@@ -1,3 +1,4 @@
+require "rails/test_unit/railtie" 
 require 'rake/clean'
 
 
