@@ -1,9 +1,19 @@
 
 sudo: required
+language: ruby
+dist: trusty
+rvm:
+  - rbx-3
+gemfile: gemfiles/Gemfile.ci
+
+bundler_args: --binstubs
 services:
+
   - docker
 
 before_install:
+   - gem update --system
+   - gem install bundler
 
 
    - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
