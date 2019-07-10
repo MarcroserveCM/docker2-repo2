@@ -9,7 +9,7 @@ before_install:
 
   
   - gem install bundler
-  - bundle install
+ 
  
 
 
@@ -17,8 +17,7 @@ before_install:
    
     
 
-
-   
+bundle install
   
 
     
