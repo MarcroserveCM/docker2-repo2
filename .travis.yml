@@ -1,7 +1,5 @@
-
-sudo: required
-
 Language: generic
+sudo: required
 
 services:
 
