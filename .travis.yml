@@ -7,9 +7,9 @@ services:
 
 before_install:
 
-  - echo "BEFORE INSTALL START"
+  
   - gem install bundler
-  - echo "BEFORE INSTALL END"
+ 
 
 
    - docker build -t marcroservecm/docker2-repo2 -f Dockerfile.dev .
